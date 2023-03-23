@@ -3,7 +3,7 @@
 #
 
 # 将源代码添加到此项目的可执行文件。
-add_executable (firstWebServer main.cpp config.h file/file.cpp file/file.h http/http.cpp http/http.h utils/utils.h utils/utils.cpp)
+add_executable (firstWebServer main.cpp config/config.h file/file.cpp file/file.h http/http.cpp http/http.h utils/utils.h utils/utils.cpp server/server.h server/server.cpp)
 
 if( WIN32)
     target_link_libraries(firstWebServer wsock32 ws2_32)

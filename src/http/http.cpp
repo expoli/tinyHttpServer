@@ -130,6 +130,7 @@ void server_file(int client, const char *file_name) {
   // 关闭文件指针
   fclose(resource);
 }
+
 void cat(int client, FILE *file) {
   const int BUFF_LEN = 4096;
   char buff[BUFF_LEN];
